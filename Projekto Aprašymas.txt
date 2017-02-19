@@ -1,0 +1,120 @@
+
+*This documentation is written in Lithuanian by now.
+* If you interested in English version please contact with Kruopalt
+
+			---------------------------- KTU 2017 ---------------------------- 
+---------------------------- Programavimo inþinerijos projektas --------------------------
+
+
+
+	Komanda : IF 5/1 gr. Saulius Juðkevièius - ma77ock
+			  IF 5/1 gr. Algirdas Palubinskas - Chameleonhider
+			  IF 5/1 gr. Martynas Mitka - Kruopalt
+			  
+	Komandos pavadinimas : JuMP
+	Projekto pavadinimas : AVS ( agurkø valdymo sistema )
+	Projektas startavo : 2017 - 02 - 19
+	
+	Ðio projekto pagrindinis tikslas :
+		- Iðmokti dirbti su projekto valdymo sistema.
+		- Tobulinti darbo grupëje águdþius.
+		- Susipaþinti su projekto kûrimo komandoje eiga.
+		- Iðmokti dokumentuoti projektà ir kodà.
+		- Iðmokti testuoti kodà.
+		- Sukurti veikianèià programà. 
+		
+	---------------------------- Projekto uþduotis ---------------------------------------
+		Sukurti taikomàjà programà, kuri galëtø valdyti, priþiûrëti ir ávetinti vertikaliø 
+		fermø ðiltnamius eigoje tarp augalo sëklos pasodinimo iki produkcijos pateikimo.
+	
+	---------------------------- Detalus apraðymas ---------------------------------------
+	> 1.0 Vertikalûs ðilnamiai	:
+	
+		Jau kuris laikas pasaulyje kalbama apie naujà ûkininkavimo rûðá - vertikalius ðiltnamius,
+	kurie galëtø dalinai pakeisti tradicinius ûkius. Principas - lokalioje vietovëje, daþniausiai
+	sandelio tipo angaruose árengiamos keliø aukðtø lentynø rëmai, kuriuose padëkluose auginami
+	nedideli augalai, darþovës ir kita. Ðio tipo ðiltnamis pranaðesnis, nes viename
+	plote keliais aukðtais galime uþauginti daugiau produkcijos, sunaudojama maþiau vandens,
+	reguliuojamos aplinkos sàlygos, apsauga nuo iðorës faktoriø. Tokia aplinkos kontrolë, leidþia
+	pagalvoti apie automatizuotas autonomines sistemas, kurios palengvintø arba visai pakeistø 
+	þmogaus darbà.
+
+	-------------------------------------Formato struktûra --------------------------------------------
+	
+	>> *.* Proceso_eigos_pavadinimas |dalies_vadovas|
+	( pvz "      >>					 2.0        Progamos kalibravimas ir nustatymas." 	| Martynas_Mitka | )
+		- lygio indikatorius-    - darbo NR -        	- Skyriaus pavadinimas - 		- dalies_vadovas -
+								
+	>>> *.*.* Ismulkesnis_proceso_apraðymas | autorius | 
+	( pvz      >>>              	   2.1.1			Gaunama informacija apie atsiradusià laisvà vietà | Martynas_Mitka | )
+	   - lygio indikatorius-  	    - darbo NR -        		- Darbo apraðas- 					         - Autorius - 
+	   
+	---------------------------------------------------------------------------------------------------
+	
+	> 2.0 Proceso eiga :
+	
+		2.0 Progamos kalibravimas ir nustatymas. | |
+		2.1 Sodinimui pasirenkama sëkla
+		2.2 Sëkla pasodinama
+		2.3 Priþiûrimas augalo augimas
+		2.4 Augalo skinimas
+	
+	
+	
+	>> 2.0 Progamos kalibravimas ir nustatymas.
+	
+		2.0  ---
+		2.0  ---
+		2.0  ---
+		2.0  ---
+		2.0  ---
+		
+	>> 2.1 Sodinimui pasirenkama sëkla.
+	
+		>>> 2.1.1 Gaunama informacija apie atsiradusià laisvà vietà. | |
+		>>> 2.1.2 Ið *DB iðtraukiama informacija apie esamà sëklø kieká ir rûðá.| |
+		>>> 2.1.3 Ið *DB iðtraukiama ðiuo metu auganèia produkcijà. | |
+		>>> 2.1.4 Ið *DB iðtraukiama informacija apie likusiø traðø ir vandens kieká.| |
+		>>> 2.1.5 Tikrama ar programos operatorius nurodë, prioritetus sëklø eiliðkumui.| |
+		>>> 2.1.6 Ið ðilnamio iðrenkama informacija apie ðiltnamio parametrus(temp, dregmë ir t.t.).| |
+		>>> 2.1.7 Informacija apdorojama algoritmu ir nusprendþiama, kur geriausia sodinti sëklà.| |
+		>>> 2.1.8 Infomacija siunèiama á logà, jei reikia nurodo ar reikia uþsakyti daugiau resursø.| |
+		>>> 2.1.9 Atnaujinama informacija duombazëje.| |
+		
+		*DB - Duomenø bazë. 
+		
+	>> 2.2 Sëkla pasodinama
+	
+		>>> 2.2.1 Robotizuotai árangai arba sàsaja su darbuotoju siunèiama komanda, kokià sëklà (jø grupæ)ir kur sodinti.| |
+		>>> 2.2.2 Sodinimas.| |
+		>>> 2.2.3 Po sodinimo atliekama pakartotinë bûklës analizë.| |
+		>>> 2.2.4 Nustatomas kito patikrinimo laikas.| |
+		>>> 2.2.5 Laikas átraukiamas á eilæ.| |
+		>>> 2.2.6 Atnaujinama informacija duombazëje.| |
+	
+	>> 2.3 Priþiûrimas augalo augimas
+	
+		>>> 2.3.1 Gaunama komanda atlikti augalo patikrinimà.| |
+		>>> 2.3.2 Ájungiami lokalûs jutikliai.| |
+		>>> 2.3.3 Gaunami jutikliø duomenys.| |
+		>>> 2.3.4 Atliekama analize.| |
+		>>> 2.3.5 Sprendþiama kà daryti toliau. | |
+		>>> 2.3.6 Atlikus veiksmus nustatomas kito patikrinimo laikas arba nutraukiams palaikymas (augalo mirties atveju).| |
+		>>> 2.3.7 Atnaujinama informacija duombazëje.| |
+		
+	>> 2.4 Augalo skinimas
+	
+		>>> 2.4.1 Gaunama komanda skinti augalà.| |
+		>>> 2.4.2 Skinimo áranga pristatoma á augalo vietà. | |
+		>>> 2.4.3 Skinama produkcija.| |
+		>>> 2.4.4 Kiekvieno skinimo atveju atliekama produkcijos analizë.| |
+		>>> 2.4.5 Po kiekvienos analizës duomenys apie tai siunèiami á duombazæ, galimam programos tobulinimui.| |
+		>>> 2.4.6 Ávertinama dirvos kokybë po skinimo.| |
+		>>> 2.4.7 Jei reikia dirva atnaujinama.| |
+		>>> 2.4.8 Atnaujinama informacija duombazëje.| |
+		>>> 2.4.9 Sodinimo programai iðsiunèiama informacija apie atsiradusià vietà.| |
+		
+	Kurdami programà, leidþiame sau mantyti, jog ðiltnamis jau aprûpintas visais reikiamais
+	jutikliais ir robotizuota áranga gebanèia autonomiðkai vykdyti siunèiamas komandas, infrastruktûra paruoðtà ir laukia komandø.
+
+	--------------------------------------------------------------------------------------
