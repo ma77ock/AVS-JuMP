@@ -1,120 +1,111 @@
 
-*This documentation is written in Lithuanian by now.
-* If you interested in English version please contact with Kruopalt
+*This documentation is written in Lithuanian for now
+*If you are interested in English version please contact Kruopalt
 
-			---------------------------- KTU 2017 ---------------------------- 
----------------------------- Programavimo inşinerijos projektas --------------------------
+	---------------------------- KTU 2017 ---------------------------- 
+---------------------------- Programavimo inÅ¾inerijos projektas --------------------------
 
 
 
-	Komanda : IF 5/1 gr. Saulius Juğkevièius - ma77ock
+	Komanda : IF 5/1 gr. Saulius JuÅ¡keviÄius - ma77ock
 			  IF 5/1 gr. Algirdas Palubinskas - Chameleonhider
 			  IF 5/1 gr. Martynas Mitka - Kruopalt
 			  
 	Komandos pavadinimas : JuMP
-	Projekto pavadinimas : AVS ( agurkø valdymo sistema )
+	Projekto pavadinimas : AVS - AgurkÅ³ Valdymo Sistema
 	Projektas startavo : 2017 - 02 - 19
 	
-	Ğio projekto pagrindinis tikslas :
-		- Iğmokti dirbti su projekto valdymo sistema.
-		- Tobulinti darbo grupëje águdşius.
-		- Susipaşinti su projekto kûrimo komandoje eiga.
-		- Iğmokti dokumentuoti projektà ir kodà.
-		- Iğmokti testuoti kodà.
-		- Sukurti veikianèià programà. 
+	Projekto tikslai :
+		- IÅ¡mokti dirbti su projekto valdymo sistema.
+		- Tobulinti darbo grupÄ—je Ä¯gÅ«dÅ¾ius.
+		- SusipaÅ¾inti su projekto kÅ«rimo komandoje eiga.
+		- IÅ¡mokti dokumentuoti projektÄ… ir kodÄ….
+		- IÅ¡mokti testuoti kodÄ….
+		- Sukurti veikianÄiÄ… ir reikalavimus atitinkanÄiÄ… programÄ…. 
 		
-	---------------------------- Projekto uşduotis ---------------------------------------
-		Sukurti taikomàjà programà, kuri galëtø valdyti, prişiûrëti ir ávetinti vertikaliø 
-		fermø ğiltnamius eigoje tarp augalo sëklos pasodinimo iki produkcijos pateikimo.
+	---------------------------- Projekto uÅ¾duotis ---------------------------------------
+		Sukurti taikomÄ…jÄ… programÄ… vertikaliajame Å¡iltnamyje auginamÅ³ augalÅ³ stebÄ—jimui ir prieÅ¾iÅ«rai nuo pasodinimo iki derliaus nuÄ—mimo.
+		
 	
-	---------------------------- Detalus aprağymas ---------------------------------------
-	> 1.0 Vertikalûs ğilnamiai	:
-	
-		Jau kuris laikas pasaulyje kalbama apie naujà ûkininkavimo rûğá - vertikalius ğiltnamius,
-	kurie galëtø dalinai pakeisti tradicinius ûkius. Principas - lokalioje vietovëje, daşniausiai
-	sandelio tipo angaruose árengiamos keliø aukğtø lentynø rëmai, kuriuose padëkluose auginami
-	nedideli augalai, darşovës ir kita. Ğio tipo ğiltnamis pranağesnis, nes viename
-	plote keliais aukğtais galime uşauginti daugiau produkcijos, sunaudojama maşiau vandens,
-	reguliuojamos aplinkos sàlygos, apsauga nuo iğorës faktoriø. Tokia aplinkos kontrolë, leidşia
-	pagalvoti apie automatizuotas autonomines sistemas, kurios palengvintø arba visai pakeistø 
-	şmogaus darbà.
+	---------------------------- Detalus apraÅ¡ymas ---------------------------------------
+	> 1.0 VertikalÅ«s Å¡ilnamiai	:	
+		Jau kuris laikas pasaulyje plÄ—tojama nauja Å«kininkavimo rÅ«Å¡is - vertikalÅ«s Å¡iltnamiai,
+	kurie galÄ—tÅ³ pakeisti dalÄ¯ tradiciniÅ³ Å«kiÅ³. Principas - lokalioje vietovÄ—je, daÅ¾niausiai
+	sandelio tipo angaruose Ä¯rengiamos keliÅ³ aukÅ¡tÅ³ lentynos rÄ—mai, kuriuose padÄ—kluose auginami
+	nedideli augalai, darÅ¾ovÄ—s ir kita. Å io tipo Å¡iltnamis pranaÅ¡esnis, nes viename
+	plote keliais aukÅ¡tais galime uÅ¾auginti daugiau produkcijos, sunaudojama maÅ¾iau vandens,
+	reguliuojamos aplinkos sÄ…lygos, apsauga nuo iÅ¡orÄ—s faktoriÅ³. Tokia aplinkos kontrolÄ—, leidÅ¾ia
+	pagalvoti apie automatizuotas autonomines sistemas, kurios palengvintÅ³ arba visai pakeistÅ³ 
+	Å¾mogaus darbÄ….
 
-	-------------------------------------Formato struktûra --------------------------------------------
+	-------------------------------------Formato struktÅ«ra --------------------------------------------
 	
 	>> *.* Proceso_eigos_pavadinimas |dalies_vadovas|
 	( pvz "      >>					 2.0        Progamos kalibravimas ir nustatymas." 	| Martynas_Mitka | )
 		- lygio indikatorius-    - darbo NR -        	- Skyriaus pavadinimas - 		- dalies_vadovas -
 								
-	>>> *.*.* Ismulkesnis_proceso_aprağymas | autorius | 
-	( pvz      >>>              	   2.1.1			Gaunama informacija apie atsiradusià laisvà vietà | Martynas_Mitka | )
-	   - lygio indikatorius-  	    - darbo NR -        		- Darbo aprağas- 					         - Autorius - 
+	>>> *.*.* Ismulkesnis_proceso_apraÅ¡ymas | autorius | 
+	( pvz      >>>              	   2.1.1			Gaunama informacija apie atsiradusiÄ… laisvÄ… vietÄ… | Martynas_Mitka | )
+	   - lygio indikatorius-  	    - darbo NR -        		- Darbo apraÅ¡as- 					         - Autorius - 
 	   
 	---------------------------------------------------------------------------------------------------
 	
-	> 2.0 Proceso eiga :
-	
+	> 2.0 Proceso eiga :	
 		2.0 Progamos kalibravimas ir nustatymas. | |
-		2.1 Sodinimui pasirenkama sëkla
-		2.2 Sëkla pasodinama
-		2.3 Prişiûrimas augalo augimas
-		2.4 Augalo skinimas
+		2.1 Sodinimui pasirenkama sÄ—kla
+		2.2 SÄ—kla pasodinama
+		2.3 PriÅ¾iÅ«rimas augalo augimas
+		2.4 Augalo skynimas		
 	
-	
-	
-	>> 2.0 Progamos kalibravimas ir nustatymas.
-	
+	>> 2.0 Progamos kalibravimas ir nustatymas.	
 		2.0  ---
 		2.0  ---
 		2.0  ---
 		2.0  ---
 		2.0  ---
 		
-	>> 2.1 Sodinimui pasirenkama sëkla.
-	
-		>>> 2.1.1 Gaunama informacija apie atsiradusià laisvà vietà. | |
-		>>> 2.1.2 Iğ *DB iğtraukiama informacija apie esamà sëklø kieká ir rûğá.| |
-		>>> 2.1.3 Iğ *DB iğtraukiama ğiuo metu auganèia produkcijà. | |
-		>>> 2.1.4 Iğ *DB iğtraukiama informacija apie likusiø trağø ir vandens kieká.| |
-		>>> 2.1.5 Tikrama ar programos operatorius nurodë, prioritetus sëklø eiliğkumui.| |
-		>>> 2.1.6 Iğ ğilnamio iğrenkama informacija apie ğiltnamio parametrus(temp, dregmë ir t.t.).| |
-		>>> 2.1.7 Informacija apdorojama algoritmu ir nusprendşiama, kur geriausia sodinti sëklà.| |
-		>>> 2.1.8 Infomacija siunèiama á logà, jei reikia nurodo ar reikia uşsakyti daugiau resursø.| |
-		>>> 2.1.9 Atnaujinama informacija duombazëje.| |
+	>> 2.1 Sodinimui pasirenkama sÄ—kla.	
+		>>> 2.1.1 Gaunama informacija apie atsiradusiÄ… laisvÄ… vietÄ…. | |
+		>>> 2.1.2 IÅ¡ *DB iÅ¡traukiama informacija apie esamÄ… sÄ—klÅ³ kiekÄ¯ ir rÅ«Å¡Ä¯.| |
+		>>> 2.1.3 IÅ¡ *DB iÅ¡traukiama Å¡iuo metu auganÄia produkcijÄ…. | |
+		>>> 2.1.4 IÅ¡ *DB iÅ¡traukiama informacija apie likusiÅ³ traÅ¡Å³ ir vandens kiekÄ¯.| |
+		>>> 2.1.5 Tikrama ar programos operatorius nurodÄ—, prioritetus sÄ—klÅ³ eiliÅ¡kumui.| |
+		>>> 2.1.6 IÅ¡ Å¡ilnamio iÅ¡renkama informacija apie Å¡iltnamio parametrus(temp, dregmÄ— ir t.t.).| |
+		>>> 2.1.7 Informacija apdorojama algoritmu ir nusprendÅ¾iama, kur geriausia sodinti sÄ—klÄ….| |
+		>>> 2.1.8 Infomacija siunÄiama Ä¯ logÄ…, jei reikia nurodo ar reikia uÅ¾sakyti daugiau resursÅ³.| |
+		>>> 2.1.9 Atnaujinama informacija duombazÄ—je.| |
 		
-		*DB - Duomenø bazë. 
+		*DB - DuomenÅ³ bazÄ—. 
 		
-	>> 2.2 Sëkla pasodinama
-	
-		>>> 2.2.1 Robotizuotai árangai arba sàsaja su darbuotoju siunèiama komanda, kokià sëklà (jø grupæ)ir kur sodinti.| |
+	>> 2.2 SÄ—kla pasodinama	
+		>>> 2.2.1 Robotizuotai Ä¯rangai arba sÄ…saja su darbuotoju siunÄiama komanda, kokiÄ… sÄ—klÄ… (jÅ³ grupÃ¦)ir kur sodinti.| |
 		>>> 2.2.2 Sodinimas.| |
-		>>> 2.2.3 Po sodinimo atliekama pakartotinë bûklës analizë.| |
+		>>> 2.2.3 Po sodinimo atliekama pakartotinÄ— bÅ«klÄ—s analizÄ—.| |
 		>>> 2.2.4 Nustatomas kito patikrinimo laikas.| |
-		>>> 2.2.5 Laikas átraukiamas á eilæ.| |
-		>>> 2.2.6 Atnaujinama informacija duombazëje.| |
+		>>> 2.2.5 Laikas Ä¯traukiamas Ä¯ eilÃ¦.| |
+		>>> 2.2.6 Atnaujinama informacija duombazÄ—je.| |
 	
-	>> 2.3 Prişiûrimas augalo augimas
-	
-		>>> 2.3.1 Gaunama komanda atlikti augalo patikrinimà.| |
-		>>> 2.3.2 Ájungiami lokalûs jutikliai.| |
-		>>> 2.3.3 Gaunami jutikliø duomenys.| |
+	>> 2.3 PriÅ¾iÅ«rimas augalo augimas	
+		>>> 2.3.1 Gaunama komanda atlikti augalo patikrinimÄ….| |
+		>>> 2.3.2 Ãjungiami lokalÅ«s jutikliai.| |
+		>>> 2.3.3 Gaunami jutikliÅ³ duomenys.| |
 		>>> 2.3.4 Atliekama analize.| |
-		>>> 2.3.5 Sprendşiama kà daryti toliau. | |
+		>>> 2.3.5 SprendÅ¾iama kÄ… daryti toliau. | |
 		>>> 2.3.6 Atlikus veiksmus nustatomas kito patikrinimo laikas arba nutraukiams palaikymas (augalo mirties atveju).| |
-		>>> 2.3.7 Atnaujinama informacija duombazëje.| |
+		>>> 2.3.7 Atnaujinama informacija duombazÄ—je.| |
 		
-	>> 2.4 Augalo skinimas
-	
-		>>> 2.4.1 Gaunama komanda skinti augalà.| |
-		>>> 2.4.2 Skinimo áranga pristatoma á augalo vietà. | |
+	>> 2.4 Augalo skinimas	
+		>>> 2.4.1 Gaunama komanda skinti augalÄ….| |
+		>>> 2.4.2 Skinimo Ä¯ranga pristatoma Ä¯ augalo vietÄ…. | |
 		>>> 2.4.3 Skinama produkcija.| |
-		>>> 2.4.4 Kiekvieno skinimo atveju atliekama produkcijos analizë.| |
-		>>> 2.4.5 Po kiekvienos analizës duomenys apie tai siunèiami á duombazæ, galimam programos tobulinimui.| |
-		>>> 2.4.6 Ávertinama dirvos kokybë po skinimo.| |
+		>>> 2.4.4 Kiekvieno skinimo atveju atliekama produkcijos analizÄ—.| |
+		>>> 2.4.5 Po kiekvienos analizÄ—s duomenys apie tai siunÄiami Ä¯ duombazÃ¦, galimam programos tobulinimui.| |
+		>>> 2.4.6 Ãvertinama dirvos kokybÄ— po skinimo.| |
 		>>> 2.4.7 Jei reikia dirva atnaujinama.| |
-		>>> 2.4.8 Atnaujinama informacija duombazëje.| |
-		>>> 2.4.9 Sodinimo programai iğsiunèiama informacija apie atsiradusià vietà.| |
+		>>> 2.4.8 Atnaujinama informacija duombazÄ—je.| |
+		>>> 2.4.9 Sodinimo programai iÅ¡siunÄiama informacija apie atsiradusiÄ… vietÄ….| |
 		
-	Kurdami programà, leidşiame sau mantyti, jog ğiltnamis jau aprûpintas visais reikiamais
-	jutikliais ir robotizuota áranga gebanèia autonomiğkai vykdyti siunèiamas komandas, infrastruktûra paruoğtà ir laukia komandø.
+	Kurdami programÄ…, leidÅ¾iame sau mantyti, jog Å¡iltnamis jau aprÅ«pintas visais reikiamais
+	jutikliais ir robotizuota Ä¯ranga gebanÄia autonomiÅ¡kai vykdyti siunÄiamas komandas, infrastruktÅ«ra paruoÅ¡ta ir laukia komandÅ³.
 
 	--------------------------------------------------------------------------------------
