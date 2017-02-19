@@ -23,11 +23,11 @@
 		- Išmokti testuoti kodą.
 		- Sukurti veikiančią ir reikalavimus atitinkančią programą. 
 		
-	---------------------------- Projekto užduotis ---------------------------------------
+---------------------------- Projekto užduotis ---------------------------------------
 		Sukurti taikomąją programą vertikaliajame šiltnamyje auginamų augalų stebėjimui ir priežiūrai nuo pasodinimo iki derliaus nuėmimo.
 		
 	
-	---------------------------- Detalus aprašymas ---------------------------------------
+---------------------------- Detalus aprašymas ---------------------------------------
 	> 1.0 Vertikalūs šilnamiai	:	
 		Jau kuris laikas pasaulyje plėtojama nauja ūkininkavimo rūšis - vertikalūs šiltnamiai,
 	kurie galėtų pakeisti dalį tradicinių ūkių. Principas - lokalioje vietovėje, dažniausiai
@@ -38,7 +38,7 @@
 	pagalvoti apie automatizuotas autonomines sistemas, kurios palengvintų arba visai pakeistų 
 	žmogaus darbą.
 
-	-------------------------------------Formato struktūra --------------------------------------------
+-------------------------------------Formato struktūra --------------------------------------------
 	
 	>> *.* Proceso_eigos_pavadinimas |dalies_vadovas|
 	( pvz "      >>					 2.0        Progamos kalibravimas ir nustatymas." 	| Martynas_Mitka | )
@@ -48,8 +48,32 @@
 	( pvz      >>>              	   2.1.1			Gaunama informacija apie atsiradusią laisvą vietą | Martynas_Mitka | )
 	   - lygio indikatorius-  	    - darbo NR -        		- Darbo aprašas- 					         - Autorius - 
 	   
-	---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 	
+> 1 Programos moduliai:
+	1.1 Šiltnamio simuliacija 
+	1.2 Valdymo sistema 
+	1.3 Duomenų bazė (DB)
+	>> 1.1 Šiltnamio simuliacija | Algirdas - Chameleonhider |
+		1.1.1 Temperatūra
+		1.1.2 Oro drėgmė
+		1.1.3 pH
+		1.1.4 Kokybės kontrolė (atsitiktiniai defektai)
+		1.1.5 Galimi komandų uždelsimai
+	>> 1.2 Valdymo sistema
+		1.2.1 GUI
+		1.2.3 Bendravimas su DB
+		1.2.4 Bendravimas su simuliacija
+		1.2.5 Log'as (su e.g. galimais sprendimų pasiūlymais)
+	>> 1.3 Duomenų bazė
+		1.3.1 Pagrindinės klasės
+		1.3.2 Lentelės (pagal DB modulyje dėstomas taisykles)
+		1.3.3 Pradiniai duomenys testavimui/naujo vartotojo susipažinimui su aplinka
+
+--Note: proceso eiga labai keistai aprašyta, suplakta DB ir simuliacija,--
+--bei yra neekonomiškų konceptų kaip naujo augalo sodinimas į buvusio blogo augalo vietą.--
+--Manau, kad tokiuose šiltnamiuose derliaus nuėmimas ir sodinimas vyksta visos paletės iškart.--
+
 	> 2.0 Proceso eiga :	
 		2.0 Progamos kalibravimas ir nustatymas. | |
 		2.1 Sodinimui pasirenkama sėkla
@@ -105,7 +129,7 @@
 		>>> 2.4.8 Atnaujinama informacija duombazėje.| |
 		>>> 2.4.9 Sodinimo programai išsiunčiama informacija apie atsiradusią vietą.| |
 		
-	Kurdami programą, leidžiame sau mantyti, jog šiltnamis jau aprūpintas visais reikiamais
-	jutikliais ir robotizuota įranga gebančia autonomiškai vykdyti siunčiamas komandas, infrastruktūra paruošta ir laukia komandų.
+	Kurdami programą leidžiame sau manyti, kad šiltnamis jau aprūpintas visais reikiamais
+	jutikliais ir robotizuota įranga gebančia įvykdyti siunčiamas komandas.
 
 	--------------------------------------------------------------------------------------
