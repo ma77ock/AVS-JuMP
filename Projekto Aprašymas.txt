@@ -65,14 +65,13 @@
 		1.2.3 Bendravimas su DB
 		1.2.4 Bendravimas su simuliacija
 		1.2.5 Log'as (su e.g. galimais sprendimų pasiūlymais)
-	>> 1.3 Duomenų bazė
+	>> 1.3 Duomenų bazė |Martynas Mitka - Kruopalt |
 		1.3.1 Pagrindinės klasės
 		1.3.2 Lentelės (pagal DB modulyje dėstomas taisykles)
 		1.3.3 Pradiniai duomenys testavimui/naujo vartotojo susipažinimui su aplinka
 
 --Note: proceso eiga labai keistai aprašyta, suplakta DB ir simuliacija,--
 --bei yra neekonomiškų konceptų kaip naujo augalo sodinimas į buvusio blogo augalo vietą.--
---Manau, kad tokiuose šiltnamiuose derliaus nuėmimas ir sodinimas vyksta visos paletės iškart.--
 
 	> 2.0 Proceso eiga :	
 		2.0 Progamos kalibravimas ir nustatymas. | |
@@ -102,7 +101,7 @@
 		*DB - Duomenų bazė. 
 		
 	>> 2.2 Sėkla pasodinama	
-		>>> 2.2.1 Robotizuotai įrangai arba sąsaja su darbuotoju siunčiama komanda, kokią sėklą (jų grupæ)ir kur sodinti.| |
+		>>> 2.2.1 Robotizuotai įrangai arba sąsaja su darbuotoju siunčiama komanda, kokią sėklą (jų grupė)ir kur sodinti.| |
 		>>> 2.2.2 Sodinimas.| |
 		>>> 2.2.3 Po sodinimo atliekama pakartotinė būklės analizė.| |
 		>>> 2.2.4 Nustatomas kito patikrinimo laikas.| |
@@ -110,22 +109,23 @@
 		>>> 2.2.6 Atnaujinama informacija duombazėje.| |
 	
 	>> 2.3 Prižiūrimas augalo augimas	
-		>>> 2.3.1 Gaunama komanda atlikti augalo patikrinimą.| |
-		>>> 2.3.2 Ájungiami lokalūs jutikliai.| |
+		>>> 2.3.1 Gaunama komanda atlikti paletės patikrinimą.| |
+		>>> 2.3.2 Įjungiami lokalūs jutikliai.| |
 		>>> 2.3.3 Gaunami jutiklių duomenys.| |
 		>>> 2.3.4 Atliekama analize.| |
 		>>> 2.3.5 Sprendžiama ką daryti toliau. | |
 		>>> 2.3.6 Atlikus veiksmus nustatomas kito patikrinimo laikas arba nutraukiams palaikymas (augalo mirties atveju).| |
+		// tam iš esmės ir skiriamas atskira klasė - Pod, kad būtų galima pašalinti mirusius augalus.//
 		>>> 2.3.7 Atnaujinama informacija duombazėje.| |
 		
 	>> 2.4 Augalo skinimas	
-		>>> 2.4.1 Gaunama komanda skinti augalą.| |
-		>>> 2.4.2 Skinimo įranga pristatoma į augalo vietą. | |
+		>>> 2.4.1 Gaunama komanda skinti augalus paletėje.| |
+		>>> 2.4.2 Skinimo įranga pristatoma į paletės vietą. | |
 		>>> 2.4.3 Skinama produkcija.| |
-		>>> 2.4.4 Kiekvieno skinimo atveju atliekama produkcijos analizė.| |
-		>>> 2.4.5 Po kiekvienos analizės duomenys apie tai siunčiami į duombazæ, galimam programos tobulinimui.| |
-		>>> 2.4.6 Ávertinama dirvos kokybė po skinimo.| |
-		>>> 2.4.7 Jei reikia dirva atnaujinama.| |
+		>>> 2.4.4 Kiekvieno skinimo atveju atliekama produkcijos analizė (buvo, nebuvo, gera, bloga).| |
+		>>> 2.4.5 Po kiekvienos analizės duomenys apie tai siunčiami į duombazę, galimam programos tobulinimui.| |
+		>>> 2.4.6 Įvertinama dirvos kokybė po skinimo.| |
+		>>> 2.4.7 Jei reikia dirva atnaujinama, galbūt leidžiama pradirvonuoti ar panašiai.| |
 		>>> 2.4.8 Atnaujinama informacija duombazėje.| |
 		>>> 2.4.9 Sodinimo programai išsiunčiama informacija apie atsiradusią vietą.| |
 		
