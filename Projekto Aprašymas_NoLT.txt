@@ -2,7 +2,7 @@
 *This documentation is written in Lithuanian by now.
 * If you interested in English version please contact with Kruopalt
 
-			---------------------------- KTU 2017 ---------------------------- 
+	    ---------------------------- KTU 2017 ---------------------------- 
 ---------------------------- Programavimo inzinerijos projektas --------------------------
 
 
