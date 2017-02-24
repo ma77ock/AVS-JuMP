@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AVS
 {
-	class GreenHouse
+	class GHouseStub
 	{
 		public int tempCapacity { get; private set; } //volume*mass in joules or smth, not scientifically accurate
 		public int tempConductivity { get; private set; } //quality of insulation, a*deltaT^2
