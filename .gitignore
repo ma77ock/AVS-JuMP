@@ -1,0 +1,5 @@
+AVS/bin/Debug/AVS.exe.config
+AVS/bin/Debug/AVS.vshost.exe.config
+*.exe
+AVS/bin/Debug/AVS.vshost.exe.manifest
+AVS/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
