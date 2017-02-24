@@ -12,7 +12,5 @@ namespace AVS
 		public int currentYear { get; private set; } //zero unless simulation runs for over a year
 		public int currentTimeMM { get; private set; }
 		public int stepTimeMM { get; private set; } //simulation step in minutes
-
-		//MY OWN BRANCH FOR SIMULATION
 	}
 }
