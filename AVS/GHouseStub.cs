@@ -16,14 +16,14 @@ namespace AVS
 
         /// <Little schemme of Shelter >
         /// _______________________
-        /// |                     |     @ pod
-        /// | |@| |@| |@| |@| |@| |    |@| pod in shelf
+        /// |                     |     @ pods in panel
+        /// | |@| |@| |@| |@| |@| |    |@| panel in shelf
         /// | |@| |@| |@| |@| |@| |    
-        /// | |@| |@| |@| |@| |@| |    ||
+        /// | |@| |@| |@| |@| |@| |    | | -on row on Shelfs
+        /// | |@| |@| |@| |@| |@| |    | |  *There is a few levels of shelfs too
+        /// | |@| |@| |@| |@| |@| |    | |
         /// | |@| |@| |@| |@| |@| |
-        /// | |@| |@| |@| |@| |@| |
-        /// | |@| |@| |@| |@| |@| |
-        /// |                     |
+        /// |                     |       
         /// ______________________|
         /// </summary>
         private int NumberOfRows{ get; private set; } // Number Of Shelf rows in GreenHouse
