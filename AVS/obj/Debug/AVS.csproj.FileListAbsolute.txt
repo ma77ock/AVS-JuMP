@@ -1,3 +1,2 @@
 E:\KTU\Studijos\P175B314_SoftEng\AVS\AVS\bin\Debug\AVS.exe.config
 E:\KTU\Studijos\P175B314_SoftEng\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
-E:\KTU\Studijos\P175B314_SoftEng\AVS-JuMP-Algirdas\AVS\bin\Debug\AVS.exe.config
