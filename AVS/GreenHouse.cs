@@ -8,17 +8,21 @@ namespace AVS
 {
     class GreenHouse
     {
-        public int tempCapacity { get; private set; } //volume*mass in joules or smth, not scientifically accurate
-        public int tempConductivity { get; private set; } //quality of insulation, a*deltaT^2
-        public int[] tempHeaterMaxPower; //Heater=Cooler, but most probably we won't need this
-        public double[] tempHeaterEfficiency = { 0.7, 0.8, 0.9, 1.0, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4 }; //100%=0.7, 70%=1.0, 0%=0.4
+		//gal perkelti i simuliacija?
         public int sensorDelayMM { get; private set; } //how often sensors check
 
-        public int grenHouseNumber { get; private set; }
-        public double temperature { get; private set; }
+        public int greenHouseNumber { get; private set; }
+		//Algirdas: vidutine, minimali, maksimali paros/savaites/menesio temperatura/dregme ar kazkas tokio
+		//temperatura cia butu kaip ir laikinai saugoma issaugojimui i duomenu baze, tam, kad butu zinoma kaip daznai vyksta anomalijos
+		//bet viena aisku: geriau temperatura tureti skyriuose atskirai
+		
+		//pats geriausias variantas issaugoti tik temperaturos/dregmes/kt anomalijas. 
+		//klausimas lieka tik kaip tai prijungti prie simuliacijos, greiciausiai tai kas X minuciu is simuliacijos klases kviesti sensorius
+        public double temperature { get; private set; } 
         public double airHumidity { get; private set; }
-
+		
         public Section[] sections { get; private set; }
+		//galbut nereikalingas - sekciju yra tiek, kiek telpa siltnamyje, o kurios neirengtos tas paprasta ignoruoti
         public int sectionCount { get; private set; }
 
         public GreenHouse(int sectCount, int number)
@@ -27,6 +31,6 @@ namespace AVS
             sections = new Section[sectCount];
         }
     }
-    }
+}
 
 
