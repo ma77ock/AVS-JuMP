@@ -41,7 +41,7 @@ namespace AVS
             {
                 string[] parts = lines[i].Split(';');
                 Plant plant = ChosePlant(parts);
-                greenHouse.AddPlant(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), plant);
+                //greenHouse.AddPlant(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), plant);
             }
             return greenHouse;
         }
