@@ -8,3 +8,4 @@ C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.exe
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.pdb
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.exe
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.pdb
+E:\KTU\Studijos\P175B314_SoftEng\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
