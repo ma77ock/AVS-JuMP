@@ -18,7 +18,7 @@ namespace AVS
         public double temperature { get; private set; }
         public double airHumidity { get; private set; }
         public double pHLevel { get; private set; }
-        public Shelf shelfID { get; private set; }
+        public List<Shelf> shelf { get; private set; }
 
     }
 }

@@ -9,6 +9,9 @@ namespace AVS
     class Panel
     {
 
+        public List<Plant> plant { get; private set; }
+
+        public int panelSize { get; private set; }
 
     }
 }

@@ -11,5 +11,6 @@ namespace AVS
         public int tier { get; private set; }
         public int column { get; private set; }
 
+        public List<Panel> panel { get; private set; }
     }
 }
