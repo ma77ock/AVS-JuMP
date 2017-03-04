@@ -9,6 +9,7 @@ namespace AVS
     class Shelf
     {
         public int tier { get; private set; }
+        public int column { get; private set; }
 
     }
 }
