@@ -47,6 +47,12 @@
   <ItemGroup>
     <Compile Include="ErrorHandler.cs" />
     <Compile Include="GreenHouse.cs" />
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panel.cs" />
     <Compile Include="Plant.cs" />
     <Compile Include="Program.cs" />
@@ -62,6 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="duomenys.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
