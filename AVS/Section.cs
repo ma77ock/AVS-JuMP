@@ -22,6 +22,9 @@ namespace AVS
                 shelves[i] = new Shelf(i + 1, shelfSize);
             }
         }
+
+
+
     }
 
 

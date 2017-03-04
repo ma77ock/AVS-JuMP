@@ -27,4 +27,6 @@ namespace AVS
             sections = new Section[sectCount];
         }
     }
-}
+    }
+
+

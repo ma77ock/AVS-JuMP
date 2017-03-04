@@ -19,31 +19,28 @@ namespace AVS
             panelCount = 0;
             shelfSize = 8;
         }
-        public Shelf(int tier, int shelfSize)
+        public Shelf(int tier, int col, int paneCount)
         {
             this.tier = tier;
-            this.shelfSize = shelfSize;
-            panel = new Panel[shelfSize];
+            this.column = column;
+            panel = new Panel[paneCount];
         }
         public void Add(Panel panel)
         {
             if (panelCount <= shelfSize)
             {
-
-                for (int i = 0; i < shelfSize; i++)
-                {
-                    if (this.panel[i] == null)
-                    {
-                        this.panel[i] = panel;
-                        panelCount++;
-                    }
-                }
+                this.panel[place] = panel;
             }
             else
             {
                 ErrorHandler.Print("Out of space on shelf");
             }
 
+        }
+        public Shelf(int tier, int paneCount)
+        {
+            this.tier = tier;        
+            panel = new Panel[paneCount];
         }
     }
 }
