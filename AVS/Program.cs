@@ -35,7 +35,7 @@ namespace AVS
             for (int i = 1; i < greenHouse.sections.Length; i++)
             {
                 string[] parts = lines[i].Split(';');
-                Section section = new Section(i, int.Parse(parts[0]), int.Parse(parts[0]));
+                Section section = new Section(i, int.Parse(parts[0]));
             }
             for (int i = greenHouse.sections.Length; i < lines.Length; i++)
             {
