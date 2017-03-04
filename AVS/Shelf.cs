@@ -22,10 +22,9 @@ namespace AVS
         public Shelf(int tier, int col, int paneCount)
         {
             this.tier = tier;
-            this.column = column;
             panel = new Panel[paneCount];
         }
-        public void Add(Panel panel)
+        public void Add(Panel panel, int place)
         {
             if (panelCount <= shelfSize)
             {
