@@ -9,7 +9,6 @@ namespace AVS
     class Shelf
     {
         public int tier { get; private set; }
-        public int column { get; private set; }
 
         public Panel[] panel { get; private set; }
         public int panelCount { get; private set; }
@@ -17,15 +16,14 @@ namespace AVS
         public Shelf()
         {
             tier = 0;
-            column = 0;
             panelCount = 0;
             shelfSize = 8;
         }
-        public Shelf(int tier, int col, int paneCount)
+        public Shelf(int tier, int shelfSize)
         {
             this.tier = tier;
-            this.column = column;
-            panel = new Panel[paneCount];
+            this.shelfSize = shelfSize;
+            panel = new Panel[shelfSize];
         }
         public void Add(Panel panel)
         {

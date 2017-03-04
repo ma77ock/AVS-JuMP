@@ -35,13 +35,27 @@ namespace AVS
             for (int i = 1; i < greenHouse.sections.Length; i++)
             {
                 string[] parts = lines[i].Split(';');
-                Section section = new Section(i, int.Parse(parts[0]), int.Parse(parts[0]));
+                Section section = new Section(i, int.Parse(parts[0]), int.Parse(parts[1]));
             }
             for (int i = greenHouse.sections.Length; i < lines.Length; i++)
             {
-                
+                string[] parts = lines[i].Split(';');
+                Plant plant = ChosePlant(parts);
+                greenHouse.AddPlant(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), plant);
             }
             return greenHouse;
+        }
+
+        private static Plant ChosePlant(string[] parts)
+        {
+            switch (char.Parse(parts[3]))
+            {
+                case 'V':
+                    return new Vegetable(parts[4], parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11], parts[12]);
+                    break;
+                default:
+                    return new Plant(parts[4], parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11]);
+            }
         }
     }
 }

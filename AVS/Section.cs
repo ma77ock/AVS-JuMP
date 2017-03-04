@@ -13,10 +13,14 @@ namespace AVS
         public Shelf[] shelves { get; private set; }
         public int shelvesCount { get; private set; }
 
-        public Section(int secNR, int tierCount, int colCount )
+        public Section(int secNR, int tierCount, int shelfSize)
         {
             sectionNumber = secNR;
             shelves = new Shelf[tierCount];
+            for (int i = 0; i < tierCount; i++)
+            {
+                shelves[i] = new Shelf(i + 1, shelfSize);
+            }
         }
     }
 
