@@ -2,6 +2,7 @@ AVS/obj/**
 AVS/bin/**
 
 # User-specific files
+**.suo
 *.suo
 *.user
 *.sln.docstates
