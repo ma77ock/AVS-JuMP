@@ -8,5 +8,7 @@ namespace AVS
 {
     class Panel
     {
+
+
     }
 }

@@ -8,5 +8,7 @@ namespace AVS
 {
     class Shelf
     {
+        public int tier { get; private set; }
+
     }
 }
