@@ -3,3 +3,8 @@ C:\Users\Saulius\Source\Repos\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
 C:\Users\Saulius\Desktop\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
 C:\Users\Martynas\Desktop\Inzinerinis\projektas\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.exe.config
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.csprojResolveAssemblyReference.cache
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.exe
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.pdb
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.exe
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.pdb

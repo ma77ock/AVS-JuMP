@@ -43,5 +43,14 @@ namespace AVS
 
         }
 
+        public Panel[] panel { get; private set; }
+        public int panelCount { get; private set; }
+
+        public Shelf(int tier, int col, int paneCount)
+        {
+            this.tier = tier;
+            this.column = column;
+            panel = new Panel[paneCount];
+        }
     }
 }

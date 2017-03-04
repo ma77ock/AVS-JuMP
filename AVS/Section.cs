@@ -8,8 +8,17 @@ namespace AVS
 {
     class Section
     {
-        public Shelf[] shelfs { get; private set; }
-        public int tierCount { get; private set; }
         public int sectionNumber { get; private set; }
+
+        public Shelf[] shelves { get; private set; }
+        public int shelvesCount { get; private set; }
+
+        public Section(int secNR, int tierCount, int colCount )
+        {
+            sectionNumber = secNR;
+            shelves = new Shelf[tierCount];
+        }
     }
+
+
 }
