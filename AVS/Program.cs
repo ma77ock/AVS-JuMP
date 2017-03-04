@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace AVS
 {
@@ -13,11 +14,11 @@ namespace AVS
         static void Main(string[] args)
 		{
             GreenHouse greenHouse = new GreenHouse();
-            int AccesKode = Calibration(greenHouse);
+            int AccesKode = Calibration(ref greenHouse);
         }
-        static int Calibration(GreenHouse GH)
+        static int Calibration(ref GreenHouse GH)
         {
-            FillWithData(GH, DataFilePath); // Atminties struktūra užkrauna duombazės informacija
+            GH = FillWithData(DataFilePath); // Atminties struktūra užkrauna duombazės informacija
             CheckSensors(GH); // Tikrinima šiltnamio sensoriai, pagal paduodama simuliacija, jei keitėsi atnaujina info.
             
         }
@@ -27,9 +28,15 @@ namespace AVS
             throw new NotImplementedException();
         }
 
-        private static void FillWithData(GreenHouse gH, string dataFilePath)
+        private static GreenHouse FillWithData( string dataFilePath)
         {
-            throw new NotImplementedException();
+            GreenHouse greenHouse = new GreenHouse();
+            string[] lines = File.ReadAllLines(dataFilePath);
+            greenHouse.shelfCount = int.Parse(lines[0]);
+            for (int i = 0; i < greenHouse.shelfCount; i++)
+            {
+                
+            }
         }
     }
 }
