@@ -8,6 +8,7 @@ namespace AVS
 {
     class Section
     {
+		//temperatura ir oro dregme perkelti cia? (tiksliau ziureti GreenHouse.cs)
         public int sectionNumber { get; private set; }
 
         public Shelf[] shelves { get; private set; }
@@ -22,10 +23,5 @@ namespace AVS
                 shelves[i] = new Shelf(i + 1, shelfSize);
             }
         }
-
-
-
     }
-
-
 }

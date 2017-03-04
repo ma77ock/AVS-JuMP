@@ -8,9 +8,10 @@ namespace AVS
 {
     class Panel
     {
-
+		//nera identifikacijos numerio?
         public Plant[] plant { get; private set; }
         public int plantCount { get; private set; }
+		//use plant.length?
         public int panelSize { get; private set; }
         public double lightIntensity { get; private set; }
         public double pHLevel { get; private set; }
@@ -23,7 +24,5 @@ namespace AVS
             lightIntensity = 0;
             pHLevel = 7;
         }
-     
-
     }
 }

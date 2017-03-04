@@ -8,11 +8,14 @@ namespace AVS
 {
     class Shelf
     {
+		//identifikacijos numeriai galetu tureti bendra pavadinima, pvz idNum
         public int tier { get; private set; }
 
         public Panel[] panel { get; private set; }
         public int panelCount { get; private set; }
+		//use panel.length?
         public int shelfSize { get; private set; }
+		
         public Shelf()
         {
             tier = 0;
@@ -25,6 +28,7 @@ namespace AVS
   
             panel = new Panel[paneCount];
         }
+		
         public void Add(Panel panel,int place)
         {
             if (panelCount <= shelfSize)
