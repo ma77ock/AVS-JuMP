@@ -13,5 +13,7 @@ namespace AVS
 
         public int panelSize { get; private set; }
 
+        public double pHLevel { get; private set; }
+
     }
 }
