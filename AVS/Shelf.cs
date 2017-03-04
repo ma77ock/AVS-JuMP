@@ -21,7 +21,12 @@ namespace AVS
             panelCount = 0;
             shelfSize = 8;
         }
-
+        public Shelf(int tier, int col, int paneCount)
+        {
+            this.tier = tier;
+            this.column = column;
+            panel = new Panel[paneCount];
+        }
         public void Add(Panel panel)
         {
             if (panelCount <= shelfSize)
@@ -41,16 +46,6 @@ namespace AVS
                 ErrorHandler.Print("Out of space on shelf");
             }
 
-        }
-
-        public Panel[] panel { get; private set; }
-        public int panelCount { get; private set; }
-
-        public Shelf(int tier, int col, int paneCount)
-        {
-            this.tier = tier;
-            this.column = column;
-            panel = new Panel[paneCount];
         }
     }
 }
