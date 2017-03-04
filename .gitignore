@@ -2,7 +2,11 @@ AVS/obj/**
 AVS/bin/**
 
 # User-specific files
-**.suo
+*\.vs\AVS\v14\.suo
+*\AVS\v14\.suo
+*\v14\.suo
+*\.suo
+*suo
 *.config
 *.suo
 *.user
