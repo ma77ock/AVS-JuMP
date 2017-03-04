@@ -13,14 +13,23 @@ namespace AVS
         static void Main(string[] args)
 		{
             GreenHouse greenHouse = new GreenHouse();
-            Simulation simulation = new Simulation();
-            double AccesKode = Calibration(simulation);
+            int AccesKode = Calibration(greenHouse);
         }
-        static double Calibration(Simulation sim)
+        static int Calibration(GreenHouse GH)
         {
-            GreenHouse.FillWithData(DataFilePath); // Atminties struktūra užkrauna duombazės informacija
-            GreenHouse.CheckSensors(sim); // Tikrinima šiltnamio sensoriai, pagal paduodama simuliacija, jei keitėsi atnaujina info.
+            FillWithData(GH, DataFilePath); // Atminties struktūra užkrauna duombazės informacija
+            CheckSensors(GH); // Tikrinima šiltnamio sensoriai, pagal paduodama simuliacija, jei keitėsi atnaujina info.
             
         }
-	}
+
+        private static void CheckSensors(GreenHouse gH)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void FillWithData(GreenHouse gH, string dataFilePath)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
