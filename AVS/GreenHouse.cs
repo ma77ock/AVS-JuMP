@@ -18,7 +18,17 @@ namespace AVS
         public double temperature { get; private set; }
         public double airHumidity { get; private set; }
        
-        public List<Shelf> shelf { get; private set; }
+        public Shelf[] shelf { get; private set; }
+        public int shelfCount { get; private set; }
 
+
+
+        public GreenHouse()
+        {
+
+
+
+        }
     }
+
 }
