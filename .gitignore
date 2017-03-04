@@ -3,6 +3,7 @@ AVS/bin/**
 
 # User-specific files
 **.suo
+*.config
 *.suo
 *.user
 *.sln.docstates
