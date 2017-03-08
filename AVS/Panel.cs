@@ -8,21 +8,19 @@ namespace AVS
 {
     class Panel
     {
-		//nera identifikacijos numerio?
+        public int ID { get; private set; }
+
         public Plant[] plant { get; private set; }
-        public int plantCount { get; private set; }
-		//use plant.length?
-        public int panelSize { get; private set; }
+
+        public double livingPercentage { get;private set } // reikšmė tarp 1 ir 0 ;
+        public bool hasPathologies { get; private set; }
         public double lightIntensity { get; private set; }
         public double pHLevel { get; private set; }
 
-        public Panel()
+        public Panel(int size)
         {
-            plantCount = 0;
-            plant[plantCount] = null;
-            panelSize = 16;
-            lightIntensity = 0;
-            pHLevel = 7;
+            plant = new Plant[size]; // aprašoma, jog toks egzistuoja ir turi tam tikrą vietų skaičių
+            hasPathologies = false;
         }
     }
 }
