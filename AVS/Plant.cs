@@ -6,33 +6,31 @@ using System.Threading.Tasks;
 
 namespace AVS
 {
-    abstract class Plant // bazinė klasė, dirbti tik su išvestinėm klasėm.
+    class TypePlant // bazinė klasė, dirbti tik su išvestinėm klasėm.
     {
-        string name { get; set; }
+        int type { get; set; }
         double pHLowLevel { get; set; }
         double pHHighLevel { get; set; }
 
         double temperatureLowLevel { get; set; }
         double temperatureHighLevel { get; set; }
         double lightIntensityLowLevel { get; set; }
-        double lightIntensityHightLevel { get; set }
+        double lightIntensityHightLevel { get; set; }
         double waterNeeded { get; set; }
         double mineralsNeeded { get; set; }
 
-
-        bool isMature { get; set; }
-
-        public Plant(string name, string phLow, string phHigh, string tempLow, string tempHigh, string light, string water, string mineral)
+        public TypePlant(int name, double phLow,double phHigh, double tempLow,
+         double tempHigh, double lightLow, double lightHigh,double water, double mineral )
         {
-            this.name = name;
-            pHLowLevel = double.Parse(phLow);
-            pHHighLevel = double.Parse(phHigh);
-            temperatureLowLevel = double.Parse(tempLow);
-            temperatureHighLevel = double.Parse(tempHigh);
-            lightIntensity = double.Parse(light);
-            waterNeeded = double.Parse(water);
-            mineralsNeeded = double.Parse(mineral);
-            isMature = false;
+            this.type = name;
+            pHLowLevel = phLow;
+            pHHighLevel = phHigh;
+            temperatureLowLevel = tempLow;
+            temperatureHighLevel = tempHigh;
+            lightIntensityLowLevel = lightLow;
+            lightIntensityHightLevel = lightHigh;
+            waterNeeded = water;
+            mineralsNeeded = mineral;
         }
     }
 }
