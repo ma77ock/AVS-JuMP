@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AVS
+{
+    class Shelf
+    {
+		//identifikacijos numeriai galetu tureti bendra pavadinima, pvz idNum
+        public int tier { get; private set; }
+
+        public Panel[] panel { get; private set; }
+        public int panelCount { get; private set; }
+		//use panel.length?
+        public int shelfSize { get; private set; }
+		
+        public Shelf()
+        {
+            tier = 0;
+            panelCount = 0;
+            shelfSize = 8;
+        }
+        public Shelf(int tier, int col, int paneCount)
+        {
+            this.tier = tier;
+  
+            panel = new Panel[paneCount];
+        }
+		
+        public void Add(Panel panel,int place)
+        {
+            if (panelCount <= shelfSize)
+            {
+                this.panel[place] = panel;
+            }
+            else
+            {
+                ErrorHandler.Print("Out of space on shelf");
+            }
+
+        }
+        public Shelf(int tier, int paneCount)
+        {
+            this.tier = tier;        
+            panel = new Panel[paneCount];
+        }
+    }
+}
