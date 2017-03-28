@@ -13,7 +13,7 @@ namespace AVS
         public Plant[] plant { get; private set; }
 
         public double livingPercentage { get;private set } // reikšmė tarp 1 ir 0 ;
-        public bool hasPathologies { get; private set; }
+        public bool hasDiseases { get; private set; }
         public double lightIntensity { get; private set; }
         public double pHLevel { get; private set; }
 
