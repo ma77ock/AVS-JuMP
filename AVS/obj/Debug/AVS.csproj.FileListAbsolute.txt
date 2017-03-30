@@ -8,3 +8,5 @@ C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.exe
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\bin\Debug\AVS.pdb
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.exe
 C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.pdb
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.MainWindow.resources
+C:\Users\Martynas\Desktop\Inzinerinis\AVS-JuMP\AVS\obj\Debug\AVS.csproj.GenerateResource.Cache

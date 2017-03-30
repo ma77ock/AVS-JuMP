@@ -11,5 +11,10 @@ namespace AVS
         public string panelClass { get; private set; }
         public int plantCapacity { get; private set; }
 
+        public PanelType( string classs, int capacity)
+        {
+            this.panelClass = classs;
+            this.plantCapacity = capacity;
+        }
     }
 }

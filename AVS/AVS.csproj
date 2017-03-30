@@ -62,7 +62,6 @@
     <Compile Include="Infrastructure\Shelf.cs" />
     <Compile Include="Simulation.cs" />
     <Compile Include="UnitConversion.cs" />
-    <Compile Include="Vegetable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
