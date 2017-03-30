@@ -57,7 +57,7 @@ namespace AVS
 			foreach(Section section in gHouse.sections){
 				foreach(Shelf shelf in section.shelves){
 					foreach(Panel panel in shelf.panel){
-						Print(string.Format("LOG: Simulating {0} {1} Panel {2} plant count: {3}", section, shelf, panel, panel.plantCount));
+						//Print(string.Format("LOG: Simulating {0} {1} Panel {2} plant count: {3}", section, shelf, panel, panel.plantCount));
 					}
 				}
 			}

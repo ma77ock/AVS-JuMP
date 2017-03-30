@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace AVS
 {
-    class TypePlant // bazinė klasė, dirbti tik su išvestinėm klasėm.
+    class TypePlant
     {
-        int type { get; set; }
+        string type { get; set; }
         double pHLowLevel { get; set; }
         double pHHighLevel { get; set; }
+        string properPanelType { get; set;}
 
         double temperatureLowLevel { get; set; }
         double temperatureHighLevel { get; set; }
@@ -19,10 +20,11 @@ namespace AVS
         double waterNeeded { get; set; }
         double mineralsNeeded { get; set; }
 
-        public TypePlant(int name, double phLow,double phHigh, double tempLow,
+        public TypePlant(string name,string paneltype, double phLow,double phHigh, double tempLow,
          double tempHigh, double lightLow, double lightHigh,double water, double mineral )
         {
             this.type = name;
+            this.properPanelType = paneltype;
             pHLowLevel = phLow;
             pHHighLevel = phHigh;
             temperatureLowLevel = tempLow;
