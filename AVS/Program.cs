@@ -9,19 +9,64 @@ namespace AVS
 {
 	class Program
 	{
-        const string DataFilePath = "duomenys.txt";
+        const string greenHousesParamsPath ="GreenHouseParams.txt";
+        const string plantDictionaryPath = "plantTypes.txt";
+        const string panelTypesPath = "panelTypes.txt";
 
         static void Main(string[] args)
 		{
-            GreenHouse greenHouse = FillWithData(DataFilePath);
-            //int AccesKode = Calibration(ref greenHouse);
+            Dictionary<string, TypePlant> PlantsDictionary;
+            Dictionary<string, PanelType> PanelsDictionary;
+            List<GreenHouse> Greenhouses;
+
+            PanelsDictionary = GetPanelDictionaryData(panelTypesPath);
+            PlantsDictionary = GetPlantDictionaryData(plantDictionaryPath);
+            Greenhouses = LoadGreenHouse(greenHousesParamsPath);
         }
-        //static int Calibration(ref GreenHouse GH)
-        //{
-        //    GH = FillWithData(DataFilePath); // Atminties struktūra užkrauna duombazės informacija
-        //    CheckSensors(GH); // Tikrinima šiltnamio sensoriai, pagal paduodama simuliacija, jei keitėsi atnaujina info.
-            
-        //}
+
+        private static List<GreenHouse> LoadGreenHouse(string greenHousesParamsPath)
+        {
+            List<GreenHouse> Gh = new List<GreenHouse>();
+            string data = File.ReadAllText(greenHousesParamsPath);
+            string[] GHparams = data.Split('!');
+            foreach (string GHparam in GHparams)
+            {
+                string[] parts = GHparam.Split(';');
+                GreenHouse greenhouse = new GreenHouse(parts[0],
+                 int.Parse(parts[1]), int.Parse(parts[2]), int.Parse(parts[3]));
+                Gh.Add(greenhouse);
+            }
+            return Gh;
+        }
+
+        private static Dictionary<string, TypePlant> GetPlantDictionaryData(string plantDictionaryPath)
+        {
+            Dictionary<string, TypePlant> temp = new Dictionary<string, TypePlant>();
+            string[] source = File.ReadAllLines(plantDictionaryPath, Encoding.GetEncoding(1257));
+            foreach (string line in source)
+            {
+                string[] parts = line.Split(';');
+                TypePlant plant = new TypePlant(parts[0],parts[1],
+                 double.Parse(parts[2]),double.Parse(parts[3]),
+                 double.Parse(parts[4]),double.Parse(parts[5]),
+                 double.Parse(parts[6]), double.Parse(parts[7]),
+                 double.Parse(parts[8]), double.Parse(parts[9]));
+                temp.Add(parts[0], plant);
+            }
+            return temp;
+        }
+        private static Dictionary<string, PanelType> GetPanelDictionaryData(string panelTypesPath)
+        {
+            Dictionary<string, PanelType> temp = new Dictionary<string, PanelType>();
+            string[] source = File.ReadAllLines(panelTypesPath);
+            foreach (string line in source)
+            {
+                string[] parts = line.Split(';');
+                PanelType panel = new PanelType(parts[0], int.Parse(parts[1]));
+                temp.Add(parts[0], panel);
+            }
+            return temp;
+        }
 
         private static void CheckSensors(GreenHouse gH)
         {
@@ -30,32 +75,7 @@ namespace AVS
 
         private static GreenHouse FillWithData( string DataFilePath)
         {
-            string[] lines = File.ReadAllLines(DataFilePath);
-            GreenHouse greenHouse = new GreenHouse(int.Parse(lines[0]),1);
-            for (int i = 1; i < greenHouse.sections.Length; i++)
-            {
-                string[] parts = lines[i].Split(';');
-                Section section = new Section(i, int.Parse(parts[0]), int.Parse(parts[1]));
-            }
-            for (int i = greenHouse.sections.Length; i < lines.Length; i++)
-            {
-                string[] parts = lines[i].Split(';');
-                Plant plant = ChosePlant(parts);
-                greenHouse.AddPlant(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2]), plant);
-            }
-            return greenHouse;
-        }
-                
-        private static Plant ChosePlant(string[] parts)
-        {
-            switch (char.Parse(parts[3]))
-            {
-                case 'V':
-                    return new Vegetable(parts[4], parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11], parts[12]);
-                    break;
-                default:
-                    return new Plant(parts[4], parts[5], parts[6], parts[7], parts[8], parts[9], parts[10], parts[11]);
-            }
+            throw new NotImplementedException();
         }
     }
 }
