@@ -54,8 +54,8 @@
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Panel.cs" />
-    <Compile Include="Infrastructure\PanelType.cs" />
-    <Compile Include="Infrastructure\TypePlant.cs" />
+    <Compile Include="Infrastructure\StructureTypes\PanelType.cs" />
+    <Compile Include="TypePlant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\Section.cs" />

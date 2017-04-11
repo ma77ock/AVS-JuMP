@@ -12,6 +12,7 @@ namespace AVS
         const string greenHousesParamsPath ="GreenHouseParams.txt";
         const string plantDictionaryPath = "plantTypes.txt";
         const string panelTypesPath = "panelTypes.txt";
+        const string plantDataPath = "plants.txt";
 
         static void Main(string[] args)
 		{
@@ -22,6 +23,7 @@ namespace AVS
             PanelsDictionary = GetPanelDictionaryData(panelTypesPath);
             PlantsDictionary = GetPlantDictionaryData(plantDictionaryPath);
             Greenhouses = LoadGreenHouse(greenHousesParamsPath);
+            GreenHouse.LoadPlantsFromFile(plantDataPath);
         }
 
         private static List<GreenHouse> LoadGreenHouse(string greenHousesParamsPath)
@@ -38,7 +40,6 @@ namespace AVS
             }
             return Gh;
         }
-
         private static Dictionary<string, TypePlant> GetPlantDictionaryData(string plantDictionaryPath)
         {
             Dictionary<string, TypePlant> temp = new Dictionary<string, TypePlant>();
@@ -67,13 +68,7 @@ namespace AVS
             }
             return temp;
         }
-
         private static void CheckSensors(GreenHouse gH)
-        {
-            throw new NotImplementedException();
-        }
-
-        private static GreenHouse FillWithData( string DataFilePath)
         {
             throw new NotImplementedException();
         }

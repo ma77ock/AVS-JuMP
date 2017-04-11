@@ -28,5 +28,10 @@ namespace AVS
                 shelves[i] = new Shelf(i, panelsCount);
             }
         }
+
+        internal void AddPlant(int shelfNo, int panelNo)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
