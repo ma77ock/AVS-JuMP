@@ -17,8 +17,16 @@ namespace AVS
         public int grenHouseNumber { get; private set; }
         public double temperature { get; private set; }
         public double airHumidity { get; private set; }
-        public double pHLevel { get; private set; }
-        public List<Shelf> shelf { get; private set; }
 
+        public Section[] sections { get; private set; }
+        public int sectionCount { get; private set; }
+
+        public GreenHouse(int sectCount, int number)
+        {
+            grenHouseNumber = number;
+            sections = new Section[sectCount];
+        }
     }
-}
+    }
+
+

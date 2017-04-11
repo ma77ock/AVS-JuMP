@@ -8,5 +8,17 @@ namespace AVS
 {
     class ErrorHandler
     {
+
+
+        
+
+
+        public static void Print(string error)
+        {
+            Console.WriteLine(error);
+
+        }
+
+
     }
 }

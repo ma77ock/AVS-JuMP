@@ -18,5 +18,16 @@ namespace AVS
         double waterNeeded { get; set; }       
         double mineralsNeeded { get; set; }
 
+        public Plant(string name, string phLow, string phHigh, string tempLow, string tempHigh, string light, string water, string mineral)
+        {
+            this.name = name;
+            pHLowLevel = double.Parse(phLow);
+            pHHighLevel = double.Parse(phHigh);
+            temperatureLowLevel = double.Parse(tempLow);
+            temperatureHighLevel = double.Parse(tempHigh);
+            lightIntensity = double.Parse(light);
+            waterNeeded = double.Parse(water);
+            mineralsNeeded = double.Parse(mineral);
+        }
     }
 }
